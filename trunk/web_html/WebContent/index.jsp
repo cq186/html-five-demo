@@ -80,5 +80,23 @@
 		onclick="window.android.JavacallHtml2()" />
 
 
+	<input id="id_input3" style="width: 90%" type="text" value="null" />
+	<input id="id_input4" style="width: 90%" type="text" value="null" />
+
+	<input id="id_input5" style="width: 90%" type="text" value="null" />
+	<input id="id_input2" style="width: 90%" type="text" value="null" />
+
+	<input id="id_input6" style="width: 90%" type="text" value="null" />
+
+	<input id="id_input7" style="width: 90%" type="text" value="null" />
+	<input id="id_input8" style="width: 90%" type="text" value="null" />
+
+	<input id="id_input9" style="width: 90%" type="text" value="null" />
+
+	<input id="id_input10" style="width: 90%" type="text" value="null" />
+	<input id="id_input11" style="width: 90%" type="text" value="null" />
+	<input id="id_input12" style="width: 90%" type="text" value="null" />
+	<input id="id_input13" style="width: 90%" type="text" value="null" />
+
 </body>
 </html>
