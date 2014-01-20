@@ -5,10 +5,11 @@
     android:orientation="vertical" 
     >
 
-    <WebView
+    <com.newbens.datepickertools.MyWebView
         android:id="@+id/webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="1200dp"
+        android:layout_height="700dp" 
+        android:background="#454878"/>
 
     <Button
         android:id="@+id/set_start"
