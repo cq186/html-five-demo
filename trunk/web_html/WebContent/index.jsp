@@ -29,6 +29,17 @@
 		window.android.Callphone(param);
 	}
 
+	function opendatetimepicker() {
+		document.getElementById("id_input2").value="测试";
+
+		
+		
+		window.android.OpenDatepicker();
+	}
+	function getdatepickerdata(param) {
+		document.getElementById('getdata').value = '得到时间 ' + param;
+	}
+
 	//direct: 1:left,2:top,3:right,4:bottom
 	function onOverScroll(direct) {
 		if (direct == 1) {
@@ -42,9 +53,21 @@
 			document.getElementById('debuginfo').innerHTML = ',bottom<br/>';
 			loadNextPage();
 		}
+
 	}
 	function loadNextPage() {
 	}
+	
+	function setdatetime(param){
+		document.getElementById('getdata').value='time--'+param;
+		
+		
+	}
+	function opendatetimepicker2(){
+		window.android.OpenDatepickerNoDay();
+	}
+
+
 </script>
 
 </head>
@@ -58,41 +81,33 @@
 	<form action="Servlet1" method="post">
 
 		<input type="submit" value="单击2">
-
 	</form>
-
 	<input type="button" value="HtmlcallJava" onclick="showHtmlcallJava()" />
 	<br>
 	<br>
 	<br>
+	<div type="width:800px;" id="debuginfo"></div>
 	<br>
 	<br>
+
+	<br>
+	<br>
+
+	<input type="text" width="200px">
+	<input type="text" width="200px" id="getdata" >
+	<input type="button" value="调用android日期控件"
+		onclick="opendatetimepicker()">
 		<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-		<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	<input type="button" value="调用android日期控件没有day"
+		onclick="opendatetimepicker2()">
+
 	<input type="button" value="HtmlcallJava2"
 		onclick="showHtmlcallJava2()" />
 
 	<input type="button" value="点击打电话" onclick="jscallphone('10010')">
 
 
-	<div type="width:800px;" id="debuginfo"></div>
+
 
 	<input id="id_input" style="width: 90%" type="text" value="null" />
 	<input type="button" value="JavacallHtml"
